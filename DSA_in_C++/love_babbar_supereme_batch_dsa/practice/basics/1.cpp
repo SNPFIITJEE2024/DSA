@@ -59,7 +59,7 @@ int main(){
     cout << num << endl;
 } */
 
-//explicit type conversion:
+/* //explicit type conversion:
 #include<iostream>
 using namespace std;
 int main(){
@@ -69,6 +69,114 @@ int main(){
     cout << sizeof(g) << endl;
     double d=5.7;
     int x=(int)d + 2;
-    cout << ""
-}
+    cout << x << endl;
+} */
+/* #include<iostream>
+using namespace std;
+int main(){
+    char ch=2024;
+    cout << ch << endl;
+} */
+/* #include<iostream>
+using namespace std;
+int main(){
+    char ch=1024;
+    cout << ch << endl;
+} */
+
+ //OPERATORS:
+
+/*//ARITHEMATIC OPERATORS:
+ #include<iostream>
+using namespace std;
+int main(){
+    int a=3;
+    int b=4;
+    cout << a+b << endl;
+    cout << a-b << endl;
+    cout << a*b << endl;
+    cout << a/b << endl;
+    cout << a%b << endl;
+    cout << 5.3/3 << endl;
+    cout << 5/3.0 << endl;
+    cout << 5.3/3.0 << endl;
+    cout << 5/3 << endl;
+    cout << (float)5/3 << endl;
+    cout << 5/(float)3 << endl;
+} */
+
+/* //RELATIONAL OPERATORS:
+#include<iostream>
+using namespace std;
+int main(){
+    int a=4;
+    int b=3;
+    cout << (a<b) << endl;
+    cout << (a>b) << endl; 
+    cout << (a!=b) << endl;
+    cout << (a==b) << endl;
+    cout << (a<=b) << endl;
+    cout << (a>=b) << endl;
+} */
+
+/* //LOGICAL OPERATORS:
+#include<iostream>
+using namespace std;
+int main(){
+    int a=3;
+    int b=4;
+    if(a>=3 && b<=4){
+        cout << "limits reached" << endl;
+    }
+} */
+
+/* #include<iostream>
+using namespace std;
+int main(){
+    int a=3;
+    int b=4;
+    if(a<3 && b>4){
+        cout << "limits reached" << endl;
+    }
+} */
+
+/* #include<iostream>
+using namespace std;
+int main(){
+    int a=3;
+    int b=4;
+    cout << !(a<3);
+} */
+
+/* #include<iostream>
+using namespace std;
+int main(){
+    int a=3;
+    int b=4;
+    cout << (a>=3 && b<=3);
+} */
+
+/* #include<iostream>
+using namespace std;
+int main(){
+    int a=3;
+    int b=4;
+    cout << (a<3 && b>3);
+} */
+
+/* #include<iostream>
+using namespace std;
+int main(){
+    int a=3;
+    int b=4;
+    cout << (a>=3 || b<=3);
+} */
+
+/* #include<iostream>
+using namespace std;
+int main(){
+    int a=3;
+    int b=4;
+    cout << !(a<3);
+} */
 
