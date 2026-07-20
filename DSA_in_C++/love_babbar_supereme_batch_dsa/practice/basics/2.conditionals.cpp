@@ -403,7 +403,7 @@ int main(){
     }
  */
 /*GENERAL CASE OF PREVIOUS ONE*/
-#include<iostream>
+/* #include<iostream>
 using namespace std;
 int main(){
     int row;
@@ -434,4 +434,286 @@ int main(){
         }
     }
     
-}
+} */
+
+/*HALF PYRAMID
+*
+**
+***
+****
+*****
+******
+*/
+/*#include<iostream>
+using namespace std;
+int main(){
+    for(int row=0; row<6; row++){
+        for(int col=0; col<6; col++){
+            if(row>=col){
+                cout << "*";
+        }
+            else{
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+} */
+//GENERAL CASE OF PREVIOUS ONE
+/* #include<iostream>
+using namespace std;
+int main(){
+    int row, col, total_row, total_col;
+    cout << "enter no. of rows: " << endl;
+    cin >> total_row;
+    cout << "enter no. of cols: " << endl;
+    cin >> total_col;
+    for(row=0; row<total_row; row++){
+        for(col=0; col<total_col; col++){
+                if(row>=col){
+                    cout << "*";
+                }
+                else{
+                    cout << " ";
+                }
+        }
+        cout << endl;
+    }
+} */
+   
+/* //GENERAL CASE FOR SQUARE CASE ( REAL HALF PYRAMID )
+#include<iostream>
+using namespace std;
+int main(){
+    int n,row,col;
+    cout << "enter n: ";
+    cin >> n;
+    for(row=0; row<n; row++){
+        for(col=0; col<row+1; col++){
+            if(row>=col){
+                cout << "*";
+            }
+            else{
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+} */
+//SAME, JUST REMOVING IF & ELSE CONDITION ( AS IT HAS NO EFFECT, ON GIVEN CONDITIONS IT'S ALREADY SATISFIED ) AN
+/* #include<iostream>
+using namespace std;
+int main(){
+    int n,row,col;
+    cout << "enter n: ";
+    cin >> n;
+    for(row=0; row<n; row++){
+        for(col=0; col<row+1; col++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+} */
+
+/*
+INVERTED HALF PYRAMID
+******
+*****
+****
+***
+**
+*
+*/
+/* #include<iostream>
+using namespace std;
+int main(){
+    int n,row,col;
+    cout << "enter n: ";
+    cin >> n;
+    for(row=0; row<n; row++){
+        for(col=0; col<n-row; col++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+} */
+/* #include<iostream>
+using namespace std;
+int main(){
+    int n,row,col;
+    cout << "enter n: ";
+    cin >> n;
+    for(row=0; row<n; row++){
+        for(col=row-1; col<row+1; col--){
+            cout << "*";
+        }
+        cout << endl;
+    }
+} */
+/* //SAME PREVIOUS ONE BY USING IF ELSE CONDITION, LIKE HALF PYRAMIND ONE ABOVE
+#include<iostream>
+using namespace std;
+int main(){
+    int row, col, n;
+    cout << "enter n " << endl;
+    cin >> n;
+    for(row=0; row<n; row++){
+        for(col=0; col<n; col++){
+            if(col<n-row){
+                cout << "*";
+            }
+            else{
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }} */
+
+/*
+NUMERIC HALF PYRAMID
+1
+12
+123
+1234
+12345
+*/
+/* #include<iostream>
+using namespace std;
+int main(){
+    int row, col, total_row, total_col;
+    cout << "enter total rows: " << endl;
+    cin >> total_row;
+    cout << "enter total cols: " << endl;
+    cin >> total_col;
+    for(row=0; row<total_row; row++){
+        for(col=0; col<row+1; col++){
+            cout << col+1;
+        }
+        cout << endl;
+    }
+} */
+/* #include<iostream>
+using namespace std;
+int main(){
+    int n, row, col;
+    cout << "enter n: " << endl;
+    cin >> n;
+    for(row=0; row<n; row++){
+        for(col=0; col<row+1; col++){
+            cout << col+1;
+        }
+        cout << endl;
+    }
+} */
+
+/*INVERTED DIGITS HALF PYRAMID
+12345
+1234
+123
+12
+1
+*/
+/* #include<iostream>
+using namespace std;
+int main(){
+    int n, row, col;
+    cout << "enter n: " << endl;
+    cin >> n;
+    for(row=0; row<n; row++){
+        for(col=0; col<n-row; col++){
+            cout << col+1;
+        }
+        cout << endl;
+    }
+} */
+//INCOMPLETE FOR NOW
+/* #include<iostream>
+using namespace std;
+int main(){
+    int total_row, total_col, row, col;
+    cout << "enter total rows : " << endl;
+    cin >> total_row;
+    cout << "enter total cols : " << endl;
+    cin >> total_col;
+    for(row=0; row<total_row; row++){
+        for(col=total_row-row; col>0; col--){
+            cout << ;
+        }
+        cout << endl;
+    }
+} */
+//NO RELATION BETWEEN ROW, COL & TOTAL_ROW IS USED
+/* #include<iostream>
+using namespace std;
+int main(){
+    int total_row, row, col;
+    cout << "enter total rows : " << endl;
+    cin >> total_row;
+    for(row=0; row<total_row; row++){
+        for(col=total_row-row; col>0; col--){
+            cout << col;
+        }
+        cout << endl;
+    }
+} */
+//USING LOGIC/RELATION BETWEEN COL, ROW & TOTAL_ROW IN COUT 
+/* #include<iostream>
+using namespace std;
+int main(){
+    int total_row, row, col;
+    cout << "enter total rows : " << endl;
+    cin >> total_row;
+    for(row=0; row<total_row; row++){
+        for(col=total_row-row; col>0; col--){
+            cout << total_row - row - col + 1l;
+        }
+        cout << endl;
+    }
+} */
+
+//FULL PYRAMID
+/*
+     *     
+    * *
+   * * *   
+  * * * * 
+ * * * * *
+* * * * * *
+*/
+/* #include<iostream>
+using namespace std;
+int main(){
+} */
+/*
+
+   
+  **
+ ****
+******
+
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+* * * * * *
+
+
+
+     *          
+    *           *
+   * *           *
+  * *           * *
+ * * *           * *
+* * *           * * *
+*/
+#include<iostream>
+using namespace std;
+int main(){
+    int row, col, total_row;
+    cout << "enter total rows: " << endl;
+    cin >> total_row;
+    for(row=0; row<total_row; row++){
+        for()
+    }
+} 
